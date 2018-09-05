@@ -1,0 +1,18 @@
+{
+  "name": "junify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "rollup": "^0.65.1",
+    "webpack": "^4.17.2",
+    "webpack-cli": "^3.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "roll": "rollup js/index.js --format iife --name myBundle --file build/bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nils Eidmann",
+  "license": "ISC"
+}
