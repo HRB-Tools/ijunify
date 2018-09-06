@@ -1,19 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="623c5777-e678-422a-8954-9c2d7af8a4de" name="Default Changelist" comment="// comments">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/bundle.js" afterDir="false" />
+    <list default="true" id="623c5777-e678-422a-8954-9c2d7af8a4de" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/js/classify.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/classify.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/classify.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/js/classify.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/csv.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/csv.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/csv.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/js/csv.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/fileio.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/fileio.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/fileio.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/js/fileio.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/js/index.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lighte.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/lighte.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/lighte.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/js/lighte.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/logic.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/logic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/logic.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/js/logic.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ts/classify.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ts/classify.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ts/csv.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ts/csv.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ts/fileio.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ts/fileio.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ts/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ts/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ts/lighte.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ts/lighte.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ts/logic.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ts/logic.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -42,7 +48,7 @@
           <entry key="js" value="38" />
           <entry key="json" value="4" />
           <entry key="map" value="2" />
-          <entry key="ts" value="33" />
+          <entry key="ts" value="37" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -53,7 +59,7 @@
           <entry key="JavaScript" value="38" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="SourceMap" value="2" />
-          <entry key="TypeScript" value="33" />
+          <entry key="TypeScript" value="37" />
           <entry key="tsconfig" value="2" />
         </counts>
       </usages-collector>
@@ -64,7 +70,7 @@
           <entry key="html" value="204" />
           <entry key="js" value="532" />
           <entry key="json" value="85" />
-          <entry key="ts" value="7102" />
+          <entry key="ts" value="7116" />
           <entry key="txt" value="315" />
         </counts>
       </usages-collector>
@@ -75,7 +81,7 @@
           <entry key="JSON" value="62" />
           <entry key="JavaScript" value="532" />
           <entry key="PLAIN_TEXT" value="331" />
-          <entry key="TypeScript" value="7102" />
+          <entry key="TypeScript" value="7116" />
           <entry key="tsconfig" value="23" />
         </counts>
       </usages-collector>
@@ -96,19 +102,51 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/ts/csv.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="253">
-                  <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+                <state relative-caret-position="207">
+                  <caret line="9" selection-start-line="9" selection-end-line="9" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ts/filedownload.ts">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <caret column="52" lean-forward="true" selection-start-column="52" selection-end-column="52" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ts/fileio.ts">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="69">
+                  <caret line="3" selection-start-line="3" selection-end-line="3" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/ts/index.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="465">
-                  <caret line="37" column="90" selection-start-line="37" selection-start-column="90" selection-end-line="37" selection-end-column="90" />
+                <state relative-caret-position="529">
+                  <caret line="38" column="10" lean-forward="true" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="10" />
                   <folding>
                     <element signature="e#0#38#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ts/lighte.ts">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="391">
+                  <caret line="30" selection-start-line="30" selection-end-line="30" />
+                  <folding>
+                    <element signature="e#172#4654#0" />
+                    <element signature="e#4672#8101#0" />
+                    <element signature="e#8131#8292#0" />
                   </folding>
                 </state>
               </provider>
@@ -123,6 +161,15 @@
               </provider>
             </entry>
           </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/ts/logic.ts">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="276">
+                  <caret line="12" column="2" lean-forward="true" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+                </state>
+              </provider>
+            </entry>
+          </file>
         </leaf>
       </split-first>
       <split-second>
@@ -131,7 +178,7 @@
             <entry file="file://$PROJECT_DIR$/ts/classify.ts">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="69">
-                  <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+                  <caret line="3" selection-start-line="3" selection-end-line="3" />
                 </state>
               </provider>
             </entry>
@@ -187,14 +234,14 @@
         <option value="$PROJECT_DIR$/build/bundle.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/ts/light.ts" />
-        <option value="$PROJECT_DIR$/ts/fileio.ts" />
-        <option value="$PROJECT_DIR$/ts/logic.ts" />
         <option value="$PROJECT_DIR$/ts/filedownload.ts" />
         <option value="$PROJECT_DIR$/js/csv.js" />
-        <option value="$PROJECT_DIR$/ts/lighte.ts" />
         <option value="$PROJECT_DIR$/ts/classify.ts" />
-        <option value="$PROJECT_DIR$/ts/csv.ts" />
         <option value="$PROJECT_DIR$/ts/index.ts" />
+        <option value="$PROJECT_DIR$/ts/csv.ts" />
+        <option value="$PROJECT_DIR$/ts/fileio.ts" />
+        <option value="$PROJECT_DIR$/ts/lighte.ts" />
+        <option value="$PROJECT_DIR$/ts/logic.ts" />
       </list>
     </option>
   </component>
@@ -309,7 +356,7 @@
       <option name="presentableId" value="Default" />
       <updated>1536130369783</updated>
       <workItem from="1536130371315" duration="25603000" />
-      <workItem from="1536215050409" duration="18735000" />
+      <workItem from="1536215050409" duration="18912000" />
     </task>
     <task id="LOCAL-00001" summary="foundation for new, promise-based, modular version of jUnify">
       <created>1536159089110</created>
@@ -353,18 +400,25 @@
       <option name="project" value="LOCAL" />
       <updated>1536235688108</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="// comments">
+      <created>1536237089278</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1536237089278</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44338000" />
+    <option name="totallyTimeSpent" value="44515000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" sideWeight="0.50209206" side_tool="true" weight="0.11567164" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49790794" visible="true" weight="0.11567164" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49790794" visible="true" weight="0.11567164" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.329718" />
@@ -373,7 +427,7 @@
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="TypeScript" order="5" weight="0.3289183" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.3286334" />
-      <window_info anchor="bottom" id="Run" order="7" weight="0.06832972" />
+      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.06832972" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
@@ -479,13 +533,6 @@
       <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="sourcemapFileViewerProvider" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/ts/logic.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/filedownload.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -517,27 +564,24 @@
     <entry file="file://$PROJECT_DIR$/js/classify.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/ts/fileio.ts">
+    <entry file="file://$PROJECT_DIR$/build/bundle.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
-          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <caret line="68" column="21" selection-start-line="68" selection-start-column="21" selection-end-line="68" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ts/lighte.ts">
+    <entry file="file://$PROJECT_DIR$/ts/classify.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
-          <caret line="45" column="2" lean-forward="true" selection-start-line="45" selection-start-column="2" selection-end-line="45" selection-end-column="2" />
-          <folding>
-            <element signature="e#101#714#0" />
-            <element signature="e#172#4654#0" />
-            <element signature="e#4672#8101#0" />
-            <element signature="e#8131#8292#0" />
-            <element signature="e#8340#8585#0" />
-            <element signature="e#292#458#0" />
-            <element signature="e#511#677#0" />
-            <element signature="e#759#841#0" />
-          </folding>
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ts/csv.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
@@ -548,34 +592,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ts/classify.ts">
+    <entry file="file://$PROJECT_DIR$/ts/fileio.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
-          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ts/csv.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/bundle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="68" column="21" selection-start-line="68" selection-start-column="21" selection-end-line="68" selection-end-column="21" />
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ts/index.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="37" column="90" selection-start-line="37" selection-start-column="90" selection-end-line="37" selection-end-column="90" />
+        <state relative-caret-position="529">
+          <caret line="38" column="10" lean-forward="true" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="10" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ts/lighte.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="e#172#4654#0" />
+            <element signature="e#4672#8101#0" />
+            <element signature="e#8131#8292#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ts/logic.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="2" lean-forward="true" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
         </state>
       </provider>
     </entry>

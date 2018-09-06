@@ -30,14 +30,10 @@ export const lighte = function (element) {
         element[8] = '0';
     } // Korrigiert falsche Verwendung von BU-10
     if (forbidden.includes(element[6])) {
-        console.log("before: " + element[6]);
         element[6] = element[6].slice(0, element[6].length - 1) + '0';
-        console.log("after: " + element[6]);
     } // Konto
     if (forbidden.includes(element[7])) {
-        console.log("before: " + element[7]);
         element[7] = element[7].slice(0, element[7].length - 1) + '0';
-        console.log("after: " + element[7]);
     } // Gegenkonto
     return element;
 };

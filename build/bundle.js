@@ -3,7 +3,6 @@
 
     // Creates a File Input element, activates it and returns the result if nonempty
     const fileresult = function () {
-        console.log("Module fileio - returns Promise");
         return new Promise(function (resolve, reject) {
             let fileInput = document.createElement('input'), reader = new FileReader();
             fileInput.setAttribute('type', 'file');
@@ -24,14 +23,12 @@
 
     // CSV Splitter -> returns a two dimensional array
     const resultArray = function (value) {
-        console.log("Module csv");
         let temp = value.split('\n'), arr = [];
         if (temp.length >= 1) {
             temp.forEach(function (element) {
                 arr.push(element.split(';'));
             });
         }
-        // console.log(arr);
         return arr;
     };
     const csvArray = function (arr) {
@@ -42,7 +39,6 @@
 
     // Classifier -> evaluates the header and extracts the required export data
     const classify = function (arr) {
-        console.log("Module classify");
         let details = {
             wj: null,
             vom: null,
@@ -55,7 +51,6 @@
     };
 
     const dataLogic = function (arr, errorFunction, boolFn) {
-        console.log("Module logic");
         let a = {
             outArr: [],
             restArr: []
@@ -66,7 +61,6 @@
             let outDir = importLine ? a.outArr : a.restArr;
             outDir.push(element);
         });
-        console.log(a);
         return a;
     };
 
@@ -97,14 +91,10 @@
             element[8] = '0';
         } // Korrigiert falsche Verwendung von BU-10
         if (forbidden.includes(element[6])) {
-            console.log("before: " + element[6]);
             element[6] = element[6].slice(0, element[6].length - 1) + '0';
-            console.log("after: " + element[6]);
         } // Konto
         if (forbidden.includes(element[7])) {
-            console.log("before: " + element[7]);
             element[7] = element[7].slice(0, element[7].length - 1) + '0';
-            console.log("after: " + element[7]);
         } // Gegenkonto
         return element;
     };
@@ -132,7 +122,6 @@
         }
     };
     let init = function () {
-        console.log("Main - Init function");
         let text;
         // Adds EventListeners to each item
         let btn1 = document.querySelector('ul .nav');
@@ -143,9 +132,7 @@
             }).then(function (arr2d) {
                 return dataLogic(arr2d, lighte, lightBool);
             }).then(function (arr2d) {
-                console.log(arr2d.outArr);
                 let information = classify(arr2d.outArr);
-                console.log(information);
                 if (arr2d.outArr.length > 0) {
                     let name = `EXTF_${information.wj}_${information.vom + information.bis}.csv`;
                     let csv = csvArray(arr2d.outArr);

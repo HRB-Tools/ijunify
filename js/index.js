@@ -11,7 +11,6 @@ document.onreadystatechange = function () {
     }
 };
 let init = function () {
-    console.log("Main - Init function");
     let text;
     // Adds EventListeners to each item
     let btn1 = document.querySelector('ul .nav');
@@ -22,9 +21,7 @@ let init = function () {
         }).then(function (arr2d) {
             return dataLogic(arr2d, lighte, lightBool);
         }).then(function (arr2d) {
-            console.log(arr2d.outArr);
             let information = classify(arr2d.outArr);
-            console.log(information);
             if (arr2d.outArr.length > 0) {
                 let name = `EXTF_${information.wj}_${information.vom + information.bis}.csv`;
                 let csv = csvArray(arr2d.outArr);

@@ -1,6 +1,5 @@
 // Creates a File Input element, activates it and returns the result if nonempty
 export const fileresult = function () {
-    console.log("Module fileio - returns Promise");
     return new Promise(function (resolve, reject) {
         let fileInput = document.createElement('input'), reader = new FileReader();
         fileInput.setAttribute('type', 'file');
