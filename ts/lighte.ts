@@ -16,7 +16,7 @@ export const lighte = function(element){
         skr.aV.forEach(function(item){arr.push(item)});
         skr.aM.forEach(function(item){arr.push(item)});
         return arr;
-    };
+    }; // Klont Automatikkonten aus dem SKR-Objekt
     let a = auto(skr04); // Im Fall von SKR 03 entsprechend aendern!
     for ( let j = 0; j < a.length; j++ ){
         if ( a[j] == element[7] && element[8] != '' && element[8] != '40'){
@@ -26,7 +26,7 @@ export const lighte = function(element){
             element[8] = "";
         }
     } // Entfernt den Schluessel bei Automatikkonten
-    if ( element[8] == '10' ){ element[8] = '0'; } // korrigiert falsche Verwendung von BU-10
+    if ( element[8] == '10' ){ element[8] = '0'; } // Korrigiert falsche Verwendung von BU-10
     if ( forbidden.includes(element[6] ) ){
         console.log("before: " + element[6]);
         element[6] = element[6].slice(0,element[6].length-1) + '0';
