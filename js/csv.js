@@ -7,7 +7,7 @@ export const resultArray = function (value) {
             arr.push(element.split(';'));
         });
     }
-    console.log(arr);
+    // console.log(arr);
     return arr;
 };
 export const csvArray = function (arr) {

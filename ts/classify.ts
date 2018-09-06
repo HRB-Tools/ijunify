@@ -1,7 +1,7 @@
 // Classifier -> evaluates the header and extracts the required export data
 
 export const classify = function (arr) {
-    console.log("Module classify")
+    console.log("Module classify");
     let details = {
         wj : <number> null,
         vom : <string> null,

@@ -31,7 +31,7 @@
                 arr.push(element.split(';'));
             });
         }
-        console.log(arr);
+        // console.log(arr);
         return arr;
     };
     const csvArray = function (arr) {
@@ -83,7 +83,7 @@
             skr.aV.forEach(function (item) { arr.push(item); });
             skr.aM.forEach(function (item) { arr.push(item); });
             return arr;
-        };
+        }; // Klont Automatikkonten aus dem SKR-Objekt
         let a = auto(skr04); // Im Fall von SKR 03 entsprechend aendern!
         for (let j = 0; j < a.length; j++) {
             if (a[j] == element[7] && element[8] != '' && element[8] != '40') {
@@ -95,7 +95,7 @@
         } // Entfernt den Schluessel bei Automatikkonten
         if (element[8] == '10') {
             element[8] = '0';
-        } // korrigiert falsche Verwendung von BU-10
+        } // Korrigiert falsche Verwendung von BU-10
         if (forbidden.includes(element[6])) {
             console.log("before: " + element[6]);
             element[6] = element[6].slice(0, element[6].length - 1) + '0';
@@ -141,19 +141,18 @@
             text.then(function (csvFile) {
                 return resultArray(csvFile);
             }).then(function (arr2d) {
-                let information = classify(arr2d);
-                console.log(information);
-                return arr2d;
-            }).then(function (arr2d) {
                 return dataLogic(arr2d, lighte, lightBool);
             }).then(function (arr2d) {
+                console.log(arr2d.outArr);
+                let information = classify(arr2d.outArr);
+                console.log(information);
                 if (arr2d.outArr.length > 0) {
-                    let name = 'main.csv';
+                    let name = `EXTF_${information.wj}_${information.vom + information.bis}.csv`;
                     let csv = csvArray(arr2d.outArr);
                     filedownload(csv, name);
                 }
                 if (arr2d.restArr.length > 0) {
-                    let name = 'rest.csv';
+                    let name = `EXTF_${information.wj}_${information.vom + information.bis}_rest.csv`;
                     let csv = csvArray(arr2d.restArr);
                     filedownload(csv, name);
                 }

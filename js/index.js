@@ -20,19 +20,18 @@ let init = function () {
         text.then(function (csvFile) {
             return resultArray(csvFile);
         }).then(function (arr2d) {
-            let information = classify(arr2d);
-            console.log(information);
-            return arr2d;
-        }).then(function (arr2d) {
             return dataLogic(arr2d, lighte, lightBool);
         }).then(function (arr2d) {
+            console.log(arr2d.outArr);
+            let information = classify(arr2d.outArr);
+            console.log(information);
             if (arr2d.outArr.length > 0) {
-                let name = 'main.csv';
+                let name = `EXTF_${information.wj}_${information.vom + information.bis}.csv`;
                 let csv = csvArray(arr2d.outArr);
                 filedownload(csv, name);
             }
             if (arr2d.restArr.length > 0) {
-                let name = 'rest.csv';
+                let name = `EXTF_${information.wj}_${information.vom + information.bis}_rest.csv`;
                 let csv = csvArray(arr2d.restArr);
                 filedownload(csv, name);
             }

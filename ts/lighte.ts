@@ -43,4 +43,4 @@ export const lighte = function(element){
 export const lightBool = function(element){
     // Insert custom logic if need be (only)
     return element !== undefined;
-}
+};
