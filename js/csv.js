@@ -10,4 +10,9 @@ export const resultArray = function (value) {
     console.log(arr);
     return arr;
 };
+export const csvArray = function (arr) {
+    let csvArray = [];
+    arr.forEach(element => csvArray.push(element.join(';')));
+    return csvArray.join('\n');
+};
 //# sourceMappingURL=csv.js.map

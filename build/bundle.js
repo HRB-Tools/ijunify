@@ -34,6 +34,11 @@
         console.log(arr);
         return arr;
     };
+    const csvArray = function (arr) {
+        let csvArray = [];
+        arr.forEach(element => csvArray.push(element.join(';')));
+        return csvArray.join('\n');
+    };
 
     // Classifier -> evaluates the header and extracts the required export data
     const classify = function (arr) {
@@ -84,10 +89,20 @@
         return element;
     };
     const lightBool = function (element) {
-        if (element === undefined) {
-            console.log("element undefined!");
-        }
+        // Insert custom logic if need be (only)
         return element !== undefined;
+    };
+
+    const filedownload = function (arr, filename) {
+        let blob = new Blob([arr], { type: 'text/csv; charset=utf-8' });
+        let link = document.createElement("a");
+        let url = URL.createObjectURL(blob);
+        link.setAttribute("href", url);
+        link.setAttribute("download", filename);
+        link.style.display = 'none';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
     };
 
     // Init when document is loaded
@@ -111,6 +126,19 @@
                 return arr2d;
             }).then(function (arr2d) {
                 return dataLogic(arr2d, lighte, lightBool);
+            }).then(function (arr2d) {
+                if (arr2d.outArr.length > 0) {
+                    let name = 'main.csv';
+                    let csv = csvArray(arr2d.outArr);
+                    filedownload(csv, name);
+                }
+                if (arr2d.restArr.length > 0) {
+                    let name = 'rest.csv';
+                    let csv = csvArray(arr2d.restArr);
+                    filedownload(csv, name);
+                }
+                else
+                    console.log("Arrays sind leer.");
             });
         });
     };
