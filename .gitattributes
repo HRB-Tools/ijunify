@@ -1,2 +1,2 @@
-js/ linguist-generated=true
-build/ linguist-generated=true
+js/* linguist-generated=true
+build/* linguist-generated=true
