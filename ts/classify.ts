@@ -10,4 +10,4 @@ export const classify = function (arr) {
     details.vom = arr[0][14].slice(4);
     details.bis = arr[0][15].slice(4);
     return details;
-}
+};
