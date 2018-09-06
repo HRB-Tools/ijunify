@@ -40,7 +40,6 @@ let init = function(){
                 let csv = csvArray(arr2d.restArr);
                 filedownload(csv, name);
             }
-            else console.log("Arrays sind leer.");
         })
     });
 
