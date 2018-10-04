@@ -4,7 +4,7 @@ ul { list-style-type: none; overflow: hidden;}
 li.disabled {pointer-events: none;opacity: 0.6;}
 li:hover {color: #ff8103;cursor: pointer;background-color: #59cae7;}
 html{-ms-text-size-adjust:140%;-webkit-text-size-adjust:140%}body{margin:0}
-li { float: left; padding: 14px 0px; border-collapse: collapse; color: #ffffff; width: 175px; max-width: 50%; text-align: center;}
+li { float: left; padding: 14px 0px; border-collapse: collapse; color: #ffffff; min-width: 175px; max-width: 50%; text-align: center;}
 a:hover, a:visited, a:link, a:active {color: inherit;text-decoration: none !important;}
 a {display: block;width: 100%;height: 100%;}
 a:visited {color: inherit;}
