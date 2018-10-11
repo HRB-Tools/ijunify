@@ -26,7 +26,7 @@ export const lighte = function(element){
             element[8] = "";
         }
     } // Entfernt den Schluessel bei Automatikkonten
-    if ( element[8] == '10' ){ element[8] = '0'; } // Korrigiert falsche Verwendung von BU-10
+    if ( element[8] == '10' || element[8] == "10" ){ element[8] = '0'; } // Korrigiert falsche Verwendung von BU-10
     if ( forbidden.includes(element[6] ) ){
         element[6] = element[6].slice(0,element[6].length-1) + '0';
     }  // Konto
