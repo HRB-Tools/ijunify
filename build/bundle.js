@@ -38,6 +38,7 @@
     };
 
     // Classifier -> evaluates the header and extracts the required export data
+    // new comment
     const classify = function (arr) {
         let details = {
             wj: null,
@@ -59,13 +60,18 @@
             element = errorFunction(element);
             let importLine = boolFn(element);
             let outDir = importLine ? a.outArr : a.restArr;
-            outDir.push(element);
+            if (element !== undefined) {
+                outDir.push(element);
+            }
         });
         return a;
     };
 
     // Custom Module that handles each line and makes corrections
     const lighte = function (element) {
+        if (element.length != 31 && element.length < 116) {
+            return undefined;
+        }
         let forbidden = ['2502', '2552', '2072'];
         let skr04 = {
             noBU: ["1181", "1184", "1185", "1186", "5110", "5111", "5112", "5113", "5114", "5115", "5116", "5117", "5118", "5119", "5130", "5131", "5132", "5133", "5134", "5135", "5136", "5137", "5138", "5139", "5160", "5162", "5163", "5166", "5167", "5170", "5171", "5175", "5176", "5189", "5191", "5192", "5300", "5301", "5302", "5303", "5304", "5305", "5306", "5307", "5308", "5309", "5400", "5401", "5402", "5403", "5404", "5405", "5406", "5407", "5408", "5409", "5420", "5421", "5422", "5423", "5424", "5425", "5425", "5426", "5427", "5428", "5429", "5430", "5435", "5440", "5505", "5506", "5507", "5508", "5509", "5540", "5541", "5542", "5543", "5544", "5545", "5546", "5547", "5548", "5549", "5550", "5553", "5560", "5565", "5710", "5711", "5714", "5715", "5717", "5718", "5720", "5721", "5722", "5723", "5724", "5725", "5726", "5727", "5731", "5734", "5736", "5738", "5741", "5743", "5746", "5748", "5750", "5751", "5754", "5755", "5760", "5761", "5780", "5781", "5784", "5785", "5788", "5790", "5791", "5792", "5793", "5794", "5798", "5906", "5908", "5910", "5913", "5915", "5920", "5921", "5923", "5925", "5926", "5930", "5933", "5935", "5940", "5941", "5943", "5945", "5946", "5951"],
@@ -87,20 +93,21 @@
                 element[8] = "";
             }
         } // Entfernt den Schluessel bei Automatikkonten
-        if (element[8] == '10' && element[8] == "10") {
+        if (element[8] == '10' || element[8] == "10" || element[8] == '"10"') {
+            console.log(element[8]);
             element[8] = '0';
         } // Korrigiert falsche Verwendung von BU-10
-        if (forbidden.includes(element[6])) {
+        if (forbidden.indexOf(element[6]) > -1) {
             element[6] = element[6].slice(0, element[6].length - 1) + '0';
         } // Konto
-        if (forbidden.includes(element[7])) {
+        if (forbidden.indexOf(element[7]) > -1) {
             element[7] = element[7].slice(0, element[7].length - 1) + '0';
         } // Gegenkonto
         return element;
     };
     const lightBool = function (element) {
         // Insert custom logic if need be (only)
-        return element !== undefined;
+        return element !== undefined && element !== null;
     };
 
     const filedownload = function (arr, filename) {
@@ -114,6 +121,7 @@
         link.click();
         document.body.removeChild(link);
     };
+    // new comment
 
     // Init when document is loaded
     document.onreadystatechange = function () {
@@ -146,5 +154,10 @@
             });
         });
     };
+    // .then(function (arr2d) {
+    //     let information = classify(arr2d);
+    //     console.log(information);
+    //     return arr2d;
+    // })
 
 }());

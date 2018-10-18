@@ -1,7 +1,7 @@
 {
-  "name": "junify",
+  "name": "ijunify",
   "version": "1.0.0",
-  "description": "",
+  "description": "jUnify, just intelligent ### Finally! I did it! I finally ditched my pure JavaScript (and single file) approach for a much more sensible TypeScript and module one.   _Probably I'll reuse these modules a lot :)_",
   "main": "index.js",
   "dependencies": {
     "rollup": "^0.65.1",
@@ -10,9 +10,17 @@
   },
   "devDependencies": {},
   "scripts": {
-    "roll": "rollup js/index.js --format iife --name myBundle --file build/bundle.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup js/index.js --format iife --name myBundle --file build/bundle.js",
+    "test": "echo \"wenigstens funktioniert das!"
   },
   "author": "Nils Eidmann",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UKayeF/ijunify.git"
+  },
+  "bugs": {
+    "url": "https://github.com/UKayeF/ijunify/issues"
+  },
+  "homepage": "https://github.com/UKayeF/ijunify#readme"
 }

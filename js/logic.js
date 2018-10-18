@@ -7,7 +7,9 @@ export const dataLogic = function (arr, errorFunction, boolFn) {
         element = errorFunction(element);
         let importLine = boolFn(element);
         let outDir = importLine ? a.outArr : a.restArr;
-        outDir.push(element);
+        if (element !== undefined) {
+            outDir.push(element);
+        }
     });
     return a;
 };

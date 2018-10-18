@@ -44,4 +44,4 @@ let init = function(){
 //     let information = classify(arr2d);
 //     console.log(information);
 //     return arr2d;
-})
+// })

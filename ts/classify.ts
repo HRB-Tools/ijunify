@@ -1,5 +1,5 @@
 // Classifier -> evaluates the header and extracts the required export data
-
+// new comment
 export const classify = function (arr) {
     let details = {
         wj : <number> null,
