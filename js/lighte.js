@@ -22,10 +22,10 @@ export const lighte = function (element) {
     }; // Klont Automatikkonten aus dem SKR-Objekt
     let a = auto(skr04); // Im Fall von SKR 03 entsprechend aendern!
     for (let j = 0; j < a.length; j++) {
-        if (a[j] == element[7] && element[8] != '' && element[8] != '40') {
+        if (a[j] == element[7] && element[8] != '' && element[8] != '400') {
             element[8] = "";
         }
-        else if (a[j] == element[6] && element[8] != '' && element[8] != '40') {
+        else if (a[j] == element[6] && element[8] != '' && element[8] != '400') {
             element[8] = "";
         }
     } // Entfernt den Schluessel bei Automatikkonten
