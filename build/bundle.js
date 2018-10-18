@@ -94,7 +94,6 @@
             }
         } // Entfernt den Schluessel bei Automatikkonten
         if (element[8] == '10' || element[8] == "10" || element[8] == '"10"') {
-            console.log(element[8]);
             element[8] = '0';
         } // Korrigiert falsche Verwendung von BU-10
         if (forbidden.indexOf(element[6]) > -1) {
