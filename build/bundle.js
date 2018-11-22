@@ -94,8 +94,13 @@
             }
         } // Entfernt den Schluessel bei Automatikkonten
         if (element[8] == '10' || element[8] == "10" || element[8] == '"10"') {
-            element[8] = '0';
+            for (let j = 0; j < a.length; j++) {
+                if (a[j] == element[7] || a[j] == element[6]) {
+                    element[8] = '0';
+                }
+            }
         } // Korrigiert falsche Verwendung von BU-10
+        // Wenn eines der Konten aus "forbidden" im Konto/Gegenkonto steht, ersetze die 2 durch eine 0 (aktuelle Umsetzung) 
         if (forbidden.indexOf(element[6]) > -1) {
             element[6] = element[6].slice(0, element[6].length - 1) + '0';
         } // Konto
