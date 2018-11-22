@@ -22,19 +22,19 @@ export const lighte = function (element) {
     }; // Klont Automatikkonten aus dem SKR-Objekt
     let a = auto(skr04); // Im Fall von SKR 03 entsprechend aendern!
     for (let j = 0; j < a.length; j++) {
-        if (a[j] == element[7] && element[8] != '' && element[8] != '400') {
+        if (a[j] == element[7] && element[8] != '' && parseInt(element[8]) == 400) {
             element[8] = "40";
         }
-        else if (a[j] == element[6] && element[8] != '' && element[8] != '400') {
+        else if (a[j] == element[6] && element[8] != '' && parseInt(element[8]) == 400) {
             element[8] = "40";
         }
     } // Entfernt den Schluessel bei Automatikkonten
     if (element[8] == '10' || element[8] == "10" || element[8] == '"10"') {
-        for (let j = 0; j < a.length; j++) {
-            if (a[j] == element[7] || a[j] == element[6]) {
-                element[8] = '0';
-            }
-        }
+        //for ( let j = 0; j < a.length; j++ ) {
+        //  if ( a[j] == element[7] || a[j] == element[6] ) {
+        element[8] = '0';
+        //  }
+        //}
     } // Korrigiert falsche Verwendung von BU-10
     // Wenn eines der Konten aus "forbidden" im Konto/Gegenkonto steht, ersetze die 2 durch eine 0 (aktuelle Umsetzung) 
     if (forbidden.indexOf(element[6]) > -1) {
