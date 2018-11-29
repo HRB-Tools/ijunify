@@ -24,7 +24,7 @@ export const lighte = function(element){
     let a = auto(skr04); // Im Fall von SKR 03 entsprechend aendern!
 //     console.log(a);
     for ( let j = 0; j < a.length; j++ ){
-      if ( element[8] == "400" ){
+      if ( element[8] == '"400"' ){
         console.log("irgendwas mit 400")
       }
         if ( parseInt(a[j]) == element[7] && element[8] == "400"){
