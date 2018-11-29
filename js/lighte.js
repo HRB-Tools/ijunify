@@ -22,6 +22,9 @@ export const lighte = function (element) {
     }; // Klont Automatikkonten aus dem SKR-Objekt
     let a = auto(skr04); // Im Fall von SKR 03 entsprechend aendern!
     for (let j = 0; j < a.length; j++) {
+        if (element[8] == "400") {
+            console.log("irgendwas mit 400");
+        }
         if (a[j] == element[7] && element[8] == "400") {
             console.log("Gegenkonto automatik, 400");
             element[8] = "40";
