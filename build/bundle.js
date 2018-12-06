@@ -92,6 +92,9 @@
             else if (parseInt(a[j]) == element[6] && element[8] == '"400"') {
                 element[8] = '"40"';
             }
+            else if ((parseInt(a[j]) == element[6] || parseInt(a[j]) == element[7]) && element[8] != '"0"') {
+                element[8] = '0'; // Automatikkonto im Konto/Gegenkonto und BU-Schlüssel => Buchungsschlüssel auf 0 setzen
+            }
         } // Entfernt den Schluessel bei Automatikkonten
         if (element[8] == '10' || element[8] == "10" || element[8] == '"10"') {
             //for ( let j = 0; j < a.length; j++ ) {
